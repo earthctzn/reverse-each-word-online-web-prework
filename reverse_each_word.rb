@@ -1,7 +1,3 @@
 def reverse_string(string)
-  split_string = string.split("")
-  reversed = []
-  string.size.times { reversed << split_string.pop }
-  reversed.join
+  string.reverse_each
 end
-puts reverse_string("hello")
