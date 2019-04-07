@@ -1,3 +1,7 @@
 def reverse_each_word(string)
-  string.reverse_each {|x| print x, " " }
-end 
+  split_string = string.split("")
+  reversed = []
+  string.size.times { reversed << split_string.pop }
+  reversed.join
+end
+puts reverse_string("hello")
